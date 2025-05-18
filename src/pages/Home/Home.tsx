@@ -1,6 +1,6 @@
 import Header from "../../components/Header/Header";
 import { Hero } from "../../components";
-import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
+// import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
 
 
 const Home = () => {
