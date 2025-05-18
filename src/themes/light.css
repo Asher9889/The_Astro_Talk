@@ -1,0 +1,15 @@
+:root {
+    --color-primary: #4f46e5;
+    --color-secondary: #9333ea;
+    --color-accent: #f59e0b;
+    --color-header-background: rgba(51, 34, 0, 0.8);
+    --color-background: #B7791F;
+    --color-text-white: #fff;
+    --color-text-black: #000;
+    --color-text-hover: #FBBF24;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: 'Inter Variable', sans-serif;
+}
