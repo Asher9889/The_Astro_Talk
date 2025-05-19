@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import { Hero } from "../../components";
+import { ConsultationForm, Corousal, Hero } from "../../components";
 // import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
 
 
@@ -10,6 +10,8 @@ const Home = () => {
             {/* <ContentWrapper> */}
                 <Hero />
             {/* </ContentWrapper> */}
+            <Corousal />
+            <ConsultationForm />
         </>
     )
 }

@@ -2,14 +2,55 @@
     --color-primary: #4f46e5;
     --color-secondary: #9333ea;
     --color-accent: #f59e0b;
-    --color-header-background: rgba(51, 34, 0, 0.8);
     --color-background: #B7791F;
+    --color-header-background: rgba(51, 34, 0, 0.8);
+    --color-hero-background: #733e0a;
     --color-text-white: #fff;
     --color-text-black: #000;
     --color-text-hover: #FBBF24;
+
+    /* For rainbow color (randow button)*/
+    --color-1: #ff0000;
+    --color-2: #ff9900;
+    --color-3: #ffff00;
+    --color-4: #00ff00;
+    --color-5: #0000ff;
+
 }
 
 body {
     background-color: var(--color-background);
     font-family: 'Inter Variable', sans-serif;
+}
+
+@theme inline {
+    --animate-shine: shine var(--duration) infinite linear;
+
+    @keyframes shine {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        50% {
+            background-position: 100% 100%;
+        }
+
+        to {
+            background-position: 0% 0%;
+        }
+    }
+}
+
+@theme inline {
+    --animate-rainbow: rainbow var(--speed, 2s) infinite linear;
+
+    @keyframes rainbow {
+        0% {
+            background-position: 0%;
+        }
+
+        100% {
+            background-position: 200%;
+        }
+    }
 }
