@@ -2,8 +2,9 @@ import ShiningBorder from "../Shining-Border/ShiningBorder";
 
 const ConsultationForm = () => {
     return (
-        <div className="text-white flex items-center justify-center p-4 min-h-screen">
-            <div className="relative rounded-xl bg-neutral-900 p-6 w-full max-w-md shadow-xl">
+        <div className="text-white  p-4 my-26 bg-(--color-header-background) rounded-t-4xl border-1 border-yellow-300">
+            <h1 className="text-3xl text-yellow-300 font-bold flex flex-row justify-center my-6">Talk to our Experts</h1>
+            <div className="relative flex flex-row gap-40 rounded-xl p-6 w-full  shadow-xl">
                 {/* Shining border */}
                 <ShiningBorder
                     borderWidth={1}
@@ -12,7 +13,7 @@ const ConsultationForm = () => {
                 />
 
                 {/* Astrology Consultation Form */}
-                <form className="space-y-4 z-10 relative">
+                <form className="flex-1 space-y-4 z-10 relative">
                     {/* Name */}
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium">
@@ -112,8 +113,65 @@ const ConsultationForm = () => {
                         Submit
                     </button>
                 </form>
+
+                <div className="flex-1">
+                    <img className="w-96" src="https://images.unsplash.com/photo-1727366292772-786f176beb04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGhpbmR1JTIwc2FkaHZpfGVufDB8fDB8fHww" alt="" />
+                </div>
             </div>
         </div>
+
+
+
+        // <div className="max-w-xl mx-auto p-6 bg-white rounded-xl shadow-md">
+        //     <h2 className="text-2xl font-semibold mb-4 text-center">Astrology Consultation Form</h2>
+
+        //     <form className="space-y-4">
+        //         <input type="text" placeholder="Full Name" className="w-full border rounded p-2" />
+
+        //         <div className="flex gap-4">
+        //             <input type="date" className="w-1/2 border rounded p-2" />
+        //             <input type="time" className="w-1/2 border rounded p-2" />
+        //         </div>
+
+        //         <input type="text" placeholder="Place of Birth" className="w-full border rounded p-2" />
+
+        //         <input type="email" placeholder="Email" className="w-full border rounded p-2" />
+        //         <input type="tel" placeholder="Phone Number" className="w-full border rounded p-2" />
+
+        //         <select className="w-full border rounded p-2">
+        //             <option>Select Consultation Type</option>
+        //             <option>Career</option>
+        //             <option>Love & Relationships</option>
+        //             <option>Health</option>
+        //             <option>Finance</option>
+        //             <option>Marriage</option>
+        //             <option>Spiritual Guidance</option>
+        //         </select>
+
+        //         <div className="space-y-2">
+        //             <label className="block">Preferred Mode:</label>
+        //             <div className="flex gap-4">
+        //                 <label><input type="radio" name="mode" /> Chat</label>
+        //                 <label><input type="radio" name="mode" /> Phone</label>
+        //                 <label><input type="radio" name="mode" /> Video</label>
+        //             </div>
+        //         </div>
+
+        //         <textarea placeholder="Describe your concern..." rows="4" className="w-full border rounded p-2"></textarea>
+
+        //         <input type="file" className="w-full border rounded p-2" />
+
+        //         <label className="block">
+        //             <input type="checkbox" /> I agree to the terms and privacy policy
+        //         </label>
+
+        //         <button className="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">
+        //             Book Consultation
+        //         </button>
+        //     </form>
+        // </div>
+
+
     );
 };
 

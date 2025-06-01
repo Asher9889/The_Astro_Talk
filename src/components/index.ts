@@ -5,7 +5,10 @@ import RainbowButton from "./Rainbow-Button/RainbowButton";
 import Meteors from "./Meteors/Metrors";
 import Corousal from "./Corousal/Corousal";
 import ConsultationForm from "./Consultation-Form/ConsultationForm";
+import ContentWrapper from "./content-wrapper/ContentWrapper";
+import AstrologerCard from "./AstrologerCard/AstrologerCard";
+import Footer from "./Footer/Footer";
 
 
 
-export { Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm }
+export { Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer }

@@ -19,7 +19,7 @@ const Header = ()=>{
                         <option value="hi">Hindi</option>
                         <option value="en">English</option>
                     </select>
-                    <button className="bg-yellow-300 px-6 py-2 rounded-md cursor-pointer">Login</button>
+                    <button className="bg-(--color-yellow-300) px-6 py-2 rounded-md cursor-pointer">Login</button>
                 </div>
             </nav>
         </header>

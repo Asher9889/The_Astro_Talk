@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import { Home } from './pages'
-import { SmoothCursor } from './components';
+// import { SmoothCursor } from './components';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <SmoothCursor />
+      {/* <SmoothCursor /> */}
       <Home />
     </>
   )
