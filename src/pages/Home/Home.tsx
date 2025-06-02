@@ -11,7 +11,7 @@ import LatestBlogs from "./Blogs/LatestBlogs";
 const Home = () => {
     return (
         <>
-            <Header />
+
             <ContentWrapper>
                 <Hero />
                 <ConsultationForm />
@@ -19,7 +19,7 @@ const Home = () => {
                 <FAQSection />
                 <Corousal />
                 <LatestBlogs />
-                <Footer />
+
             </ContentWrapper>
         </>
     )

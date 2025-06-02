@@ -8,7 +8,9 @@ import ConsultationForm from "./Consultation-Form/ConsultationForm";
 import ContentWrapper from "./content-wrapper/ContentWrapper";
 import AstrologerCard from "./AstrologerCard/AstrologerCard";
 import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
 
 
 
-export { Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer }
+
+export {Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer }
