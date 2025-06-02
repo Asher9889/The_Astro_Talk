@@ -1,9 +1,9 @@
-import Header from "../../components/Header/Header";
-import { ConsultationForm, Corousal, Footer, Hero } from "../../components";
+import {   Hero } from "../../components";
 import { ContentWrapper } from "../../components/index";
 import OnlineAstrologers from "./Online-Astrologers/OnlineAstrologers";
 import FAQSection from "./FAQSection/FAQSection";
 import LatestBlogs from "./Blogs/LatestBlogs";
+import ServicesSection from "./Services/ServicesSection";
 
 // import ContentWrapper from "../../components/content-wrapper/ContentWrapper";
 
@@ -14,10 +14,10 @@ const Home = () => {
 
             <ContentWrapper>
                 <Hero />
-                <ConsultationForm />
+                <ServicesSection />
                 <OnlineAstrologers />
                 <FAQSection />
-                <Corousal />
+                {/* <Corousal /> */}
                 <LatestBlogs />
 
             </ContentWrapper>

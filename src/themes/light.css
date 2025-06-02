@@ -10,6 +10,7 @@
     --color-text-black: #000;
     --color-text-hover: #FBBF24;
     --color-yellow-300: oklch(90.5% 0.182 98.111);
+    --color-yellow-border: oklch(90.5% 0.182 98.111);
 
     /* For rainbow color (randow button)*/
     --color-1: #ff0000;
