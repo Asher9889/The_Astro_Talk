@@ -1,17 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import tla from "../../assets/TLA_01.png"
 const navMenu = ["Chat with Astrologer", "Astrological Matchmaking" , "Horoscope" , "Tarot Card Reader", "Punchang", "Blog"]
 
 const Header = ()=>{
+    const navigate = useNavigate();
     return (
         <header className="w-full bg-(--color-header-background)">
             <nav className="w-full flex flex-row justify-between items-center max-w-7xl mx-auto text-sm">
                 <button className="w-22 cursor-pointer">
-                    <img src={tla} alt="TLA Logo" />
+                    <img onClick={()=> navigate("/")} src={tla} alt="TLA Logo" />
                 </button>
                 <div className="flex flex-row gap-4 md:gap-6 lg:gap-8 item-center justify-center  text-(--color-text-white)">
                     {navMenu.map((menu) => (
-                        <NavLink className={`hover:text-(--color-text-hover) hover:scale-99 transition-all duration-300`} to={`/${menu}`}>{menu}</NavLink>
+                        <NavLink className={`hover:text-(--color-text-hover) hover:scale-99 transition-all duration-300`} to={`/${menu.toLowerCase().split(" ").join("_")}`}>{menu}</NavLink>
                     ))}
                 </div>
                 <div className="flex flex-row justify-center items-center gap-4">

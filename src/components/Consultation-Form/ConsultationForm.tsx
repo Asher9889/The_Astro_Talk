@@ -1,8 +1,9 @@
+import ContentWrapper from "../content-wrapper/ContentWrapper";
 import ShiningBorder from "../Shining-Border/ShiningBorder";
 
 const ConsultationForm = () => {
     return (
-        <div className="text-white  p-4 my-26 bg-(--color-header-background) rounded-t-4xl border-1 border-yellow-300">
+        <ContentWrapper className="text-white  p-4 my-26 bg-(--color-header-background) rounded-t-4xl border-1 border-yellow-300">
             <h1 className="text-3xl text-yellow-300 font-bold flex flex-row justify-center my-6">Talk to our Experts</h1>
             <div className="relative flex flex-row gap-40 rounded-xl p-6 w-full  shadow-xl">
                 {/* Shining border */}
@@ -118,7 +119,7 @@ const ConsultationForm = () => {
                     <img className="w-96" src="https://images.unsplash.com/photo-1727366292772-786f176beb04?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGhpbmR1JTIwc2FkaHZpfGVufDB8fDB8fHww" alt="" />
                 </div>
             </div>
-        </div>
+        </ContentWrapper>
 
 
 
