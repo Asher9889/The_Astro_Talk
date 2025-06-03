@@ -7,9 +7,9 @@ import { MdEmail, MdPhone } from 'react-icons/md';
 
 const Footer = () => {
   return (
-    <footer className="bg-(--color-header-background) border-1 border-yellow-300 pt-12 my-12 pb-6 px-4 md:px-20 text-gray-800">
+    <footer className="bg-(--color-saddle-brown)  pt-12 my-12 pb-6 px-4 md:px-20 text-gray-800">
       {/* Top Section - Icons + Buttons */}
-      <div className="bg-yellow-400 rounded-t-3xl p-6 md:p-10 mb-8 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+      <div className="bg-(--color-golden-yellow) rounded-t-3xl p-6 md:p-10 mb-8 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
         {/* Icons Row */}
         <div className="flex justify-around w-full md:w-2/3 text-center">
           {[
@@ -25,18 +25,18 @@ const Footer = () => {
         </div>
 
         {/* Buttons Row */}
-        <div className="mt-6 md:mt-0 md:ml-6 flex space-x-4 bg-black p-2 rounded-full">
-          <button className="bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-full font-semibold text-sm">
+        <div className="mt-6 md:mt-0 md:ml-6 flex space-x-4 bg-black p-2 rounded-full ">
+          <button className="bg-(--color-golden-yellow) hover:bg-yellow-300 px-4 py-2 rounded-full font-semibold text-sm">
             💬 Chat with Astrologer
           </button>
-          <button className="bg-yellow-400 hover:bg-yellow-300 px-4 py-2 rounded-full font-semibold text-sm">
+          <button className="bg-(--color-golden-yellow) hover:bg-yellow-300 px-4 py-2 rounded-full font-semibold text-sm">
             📞 Talk to Astrologer
           </button>
         </div>
       </div>
 
       {/* Middle Section - About, Links, Contact */}
-      <div className="flex text-zinc-200 flex-col md:flex-row justify-between items-start gap-12">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-12 text-(--color-text-white)">
         {/* About */}
         <div className="md:w-1/2">
           <h3 className="text-lg font-bold mb-3">About TheAstroLife</h3>

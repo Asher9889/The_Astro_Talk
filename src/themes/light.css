@@ -6,11 +6,19 @@
 
     --color-header-background: rgba(51, 34, 0, 0.8);
     --color-hero-background: #733e0a;
-    --color-text-white: #fff;
+    --color-text-white: #F5F5F5;
     --color-text-black: #000;
     --color-text-hover: #FBBF24;
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-yellow-border: oklch(90.5% 0.182 98.111);
+
+    /* For Testing Color */
+    --color-saddle-brown: #8B4513;
+    --color-white-smoke: #F5F5F5;
+    --color-golden-yellow: #FFD700;
+    --color-deep-maroon: #800000;
+
+
 
     /* For rainbow color (randow button)*/
     --color-1: #ff0000;
@@ -25,7 +33,10 @@ body {
     background-color: var(--color-background);
     font-family: 'Inter Variable', sans-serif;
 }
-
+h1, h2 {
+    color: #fff; /* Earthy Brown */
+    text-shadow: 1px 1px 2px #24231f; /* Subtle Golden Yellow glow */
+  }
 @theme inline {
     --animate-shine: shine var(--duration) infinite linear;
 

@@ -5,7 +5,7 @@ const navMenu = ["Chat with Astrologer", "Astrological Matchmaking" , "Horoscope
 const Header = ()=>{
     const navigate = useNavigate();
     return (
-        <header className="w-full bg-(--color-header-background)">
+        <header className="w-full bg-(--color-saddle-brown)">
             <nav className="w-full flex flex-row justify-between items-center max-w-7xl mx-auto text-sm">
                 <button className="w-22 cursor-pointer">
                     <img onClick={()=> navigate("/")} src={tla} alt="TLA Logo" />

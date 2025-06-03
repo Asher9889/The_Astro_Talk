@@ -24,7 +24,7 @@ const Hero = () => {
 
                 <SwiperSlide>
                     <div className="h-[400px] bg-(--color-yellow-900) bg-opacity-90 flex flex-col justify-center items-center text-(--color-text-white)">
-                        <h1 className="text-5xl font-bold ">
+                        <h1 className="text-5xl font-bold">
                             <SparklesText sparklesCount={10}>
                                 Chat with Astrologers Now
                             </SparklesText>
