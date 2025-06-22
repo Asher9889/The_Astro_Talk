@@ -9,3 +9,5 @@
 | **Borders / Dividers**  | `#dda15e`                          | Light warm border accent                   |
 | **Link / Active**       | `#bc6c25`                          | Stands out, warm orange                    |
 | **Card / Section BG**   | `#ffffff` or `#fefae0` with shadow | For clean layout sections                  |
+
+

@@ -10,8 +10,11 @@ import AstrologerCard from "./AstrologerCard/AstrologerCard";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Button from "./Button/Button";
+import UserForm from "./UserForm/UserForm";
+import KundliGenerateLoading from "./KundliGenerateLoading.tsx/KundliGenerateLoading";
+import Loading from "./Loading/Loading";
 
 
 
 
-export {Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button }
+export {Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm, KundliGenerateLoading, Loading }
