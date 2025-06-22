@@ -7,7 +7,7 @@ interface IProps {
 
 const ContentWrapper = ({children, className = ""}:IProps)=>{
     return (
-        <main className={`max-w-7xl mx-auto ${className}`}>
+        <main className={`max-w-7xl mx-auto px-4 ${className}`}>
             {children}
         </main>
     )

@@ -1,8 +1,28 @@
 :root {
+
+    --color-background: #fefae0;
+    /* Soft white background */
+    --color-text-primary: #283618;
+    /* Primary text (dark green) */
+    --color-text-secondary: #606c38;
+    /* Subtle headings, secondary text */
+
+    --color-button-primary: #bc6c25;
+    /* CTA buttons (orange) */
+    --color-button-secondary: #dda15e;
+    /* Secondary buttons/highlights */
+
+    --color-button-text: #fefae0;
+    /* Light text on dark buttons */
+    --color-border: #dda15e;
+    /* Accent border or dividers */
+    --color-link: #bc6c25;
+    /* Active link, highlight */
+
     --color-primary: #4f46e5;
     --color-secondary: #9333ea;
     --color-accent: #f59e0b;
-    --color-background: #B7791F;
+    --color-background: #F5F5F5;
 
     --color-header-background: rgba(51, 34, 0, 0.8);
     --color-hero-background: #733e0a;
@@ -14,6 +34,7 @@
 
     /* For Testing Color */
     --color-saddle-brown: #8B4513;
+    /* 8B4513 */
     --color-white-smoke: #F5F5F5;
     --color-golden-yellow: #FFD700;
     --color-deep-maroon: #800000;
@@ -33,10 +54,9 @@ body {
     background-color: var(--color-background);
     font-family: 'Inter Variable', sans-serif;
 }
-h1, h2 {
-    color: #fff; /* Earthy Brown */
-    text-shadow: 1px 1px 2px #24231f; /* Subtle Golden Yellow glow */
-  }
+
+
+
 @theme inline {
     --animate-shine: shine var(--duration) infinite linear;
 
