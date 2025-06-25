@@ -7,7 +7,7 @@ import { MdEmail, MdPhone } from 'react-icons/md';
 
 const Footer = () => {
   return (
-    <footer className="bg-(--color-saddle-brown)  pt-12 my-12 pb-6 px-4 md:px-20 text-gray-800">
+    <footer className="bg-(--color-saddle-brown)  pt-12  pb-6 px-4 md:px-20 text-gray-800">
       {/* Top Section - Icons + Buttons */}
       <div className="bg-(--color-golden-yellow) rounded-t-3xl p-6 md:p-10 mb-8 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
         {/* Icons Row */}
