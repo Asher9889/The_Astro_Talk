@@ -62,13 +62,13 @@ export default function KundliGenerateLoading() {
   
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-(--color-background) text-[var(--color-text-primary)] relative overflow-hidden  ">
+    <div className="min-h-screen flex items-center justify-center  text-(--color-text-primary) relative overflow-hidden  ">
       {/* Background Soft Motion */}
-      <div className="absolute w-[60vw] h-[60vw] bg-(--color-button-secondary) opacity-30 rounded-full blur-3xl animate-pulse top-[-10%] left-[-20%]" />
-      <div className="absolute w-[60vw] h-[60vw] bg-(--color-button-primary) opacity-30 rounded-full blur-3xl animate-pulse-slow top-[40%] right-[-20%]" />
+      {/* <div className="absolute w-[60vw] h-[60vw] bg-(--color-button-secondary) opacity-30 rounded-full blur-3xl animate-pulse top-[-10%] left-[-20%]" /> */}
+      {/* <div className="absolute w-[60vw] h-[60vw] bg-(--color-button-primary) opacity-30 rounded-full blur-3xl animate-pulse-slow top-[40%] right-[-20%]" /> */}
 
       <div className=" backdrop-blur-xl rounded-2xl shadow-2xl p-8 max-w-xl w-full border border-(--color-border) z-10 transition-all duration-700 ease-in-out">
-        <h2 className="text-2xl font-bold mb-6 text-center">🔮 Kundli Generation</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-(--color-text-primary)">🔮 Kundli Generation</h2>
 
         <ul className="space-y-6 relative">
           {steps.map((step, index) => (
@@ -99,7 +99,7 @@ export default function KundliGenerateLoading() {
               <button onClick={() => handlePayment("share")} className="px-5 py-2 rounded-lg text-(--color-button-text) bg-(--color-button-primary) hover:bg-opacity-90 transition duration-300 shadow-md hover:scale-105 cursor-pointer">
                 📤 Share
               </button>
-              <button onClick={() => handlePayment("download")} className="px-5 py-2 rounded-lg text-(--color-button-text) bg-(--color-button-secondary) hover:bg-opacity-90 transition duration-300 shadow-md hover:scale-105 cursor-pointer">
+              <button onClick={() => handlePayment("download")} className="px-5 py-2 rounded-lg text-(--color-button-text) bg-(--color-text-secondary) hover:bg-opacity-90 transition duration-300 shadow-md hover:scale-105 cursor-pointer">
                 ⬇️ Download
               </button>
             </div>
