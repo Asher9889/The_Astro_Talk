@@ -5,7 +5,7 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import '@fontsource-variable/inter/wght.css';
 import Routing from './routes.tsx'
-import { Footer, Header } from './components/index.ts';
+import {  Header } from './components/index.ts';
 
 
 
@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Header />
       <Routing />
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   </StrictMode>,
 )
