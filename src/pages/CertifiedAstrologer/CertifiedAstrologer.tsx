@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
 export const CertifiedAstrologer: React.FC = () => {
   const handlePayment = (action: "No" | "Yes") => {
