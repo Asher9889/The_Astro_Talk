@@ -4,7 +4,7 @@ import { KundliGenerateLoading } from '../../components';
 
 const KundliGenerate = () => {
   return (
-    <div>
+    <div className='px-4'>
       <KundliGenerateLoading />
     </div>
   )
