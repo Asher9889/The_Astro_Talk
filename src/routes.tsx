@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, KundliGenerate } from "./pages";
+import { Home, KundliGenerate, TalkToAstrologer } from "./pages";
 // import {CertifiedAstrologer} from "./pages";
 // import { CertifiedAstrologer } from "./pages/CertifiedAstrolog
 import { CertifiedAstrologer } from "./pages/CertifiedAstrologer/CertifiedAstrologer";
@@ -24,11 +24,12 @@ const routesData = [
         element: <CertifiedAstrologer />
     },
     {
-        name: "/chat_with_astrologer",
+        name: "/chat_with_astrologer", 
         element: <ConsultationForm />
     },
     {
-
+        name: "/talk_to_astrologer",
+        element: <TalkToAstrologer />
     }
 ]
 

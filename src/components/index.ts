@@ -13,8 +13,9 @@ import Button from "./Button/Button";
 import UserForm from "./UserForm/UserForm";
 import KundliGenerateLoading from "./KundliGenerateLoading.tsx/KundliGenerateLoading";
 import Loading from "./Loading/Loading";
+import TalkToAstroForm from "./talk-to-astro-form/TalkToAstroForm";
 
 
 
 
-export {Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm, KundliGenerateLoading, Loading }
+export {Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm, KundliGenerateLoading, Loading, TalkToAstroForm }

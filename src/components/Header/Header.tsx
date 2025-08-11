@@ -19,7 +19,7 @@ const Header = () => {
           <ul className="flex flex-row gap-16 justify-center items-center">
             <li>
               <button
-                // onClick={() => navigate("/talk-to-astrologer")}
+                onClick={() => navigate("/talk_to_astrologer")}
                 className="text-md cursor-pointer text-(--color-text-primary) hover:scale-[0.98] transition-all"
               >
                 Talk to an Astrologer
