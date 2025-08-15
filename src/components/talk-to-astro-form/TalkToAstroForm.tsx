@@ -48,7 +48,7 @@ const TalkToAstroForm: React.FC = () => {
 
   return (
     <div
-      className="flex items-center justify-center max-h-screen min-h-1/2 mt-10"
+      className="flex items-center justify-center max-h-screen h-[80vh] min-h-2/3 px-2"
     >
       <motion.div
         className="max-w-5xl w-full bg-white shadow-xl rounded-xl overflow-hidden grid md:grid-cols-2"

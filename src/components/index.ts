@@ -1,6 +1,6 @@
 import Hero from "./Hero-Banner/Hero";
 import { SmoothCursor } from "./Smooth-Cursor/SmoothCursor";
-import  SparklesText  from "./Sparkles-Text/SparklesText";
+import SparklesText from "./Sparkles-Text/SparklesText";
 import RainbowButton from "./Rainbow-Button/RainbowButton";
 import Meteors from "./Meteors/Metrors";
 import Corousal from "./Corousal/Corousal";
@@ -14,8 +14,11 @@ import UserForm from "./UserForm/UserForm";
 import KundliGenerateLoading from "./KundliGenerateLoading.tsx/KundliGenerateLoading";
 import Loading from "./Loading/Loading";
 import TalkToAstroForm from "./talk-to-astro-form/TalkToAstroForm";
+import BlogShowcase from "./Blog-Showcase/BlogShowCase";
+import BlogDetail from "./BlogDetails/BlogDetails";
 
 
 
-
-export {Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm, KundliGenerateLoading, Loading, TalkToAstroForm }
+export { Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, 
+    ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm, 
+    KundliGenerateLoading, Loading, TalkToAstroForm, BlogShowcase, BlogDetail }

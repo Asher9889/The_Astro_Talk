@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, KundliGenerate, TalkToAstrologer } from "./pages";
+import { Blog, Home, KundliGenerate, TalkToAstrologer } from "./pages";
 // import {CertifiedAstrologer} from "./pages";
 // import { CertifiedAstrologer } from "./pages/CertifiedAstrolog
 import { CertifiedAstrologer } from "./pages/CertifiedAstrologer/CertifiedAstrologer";
-import { ConsultationForm } from "./components";
+import { BlogDetail, ConsultationForm } from "./components";
 import Login from "./pages/Login/Login";
 
 const routesData = [
@@ -30,6 +30,14 @@ const routesData = [
     {
         name: "/talk_to_astrologer",
         element: <TalkToAstrologer />
+    },
+    {
+        name: "/astrology-insight",
+        element: <Blog />
+    },
+    {
+        name: "/astrology-insight/:id",
+        element: <BlogDetail />
     }
 ]
 
