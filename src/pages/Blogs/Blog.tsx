@@ -6,10 +6,12 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const url = import.meta.env.VITE_BASE_URL;
+
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("http://localhost:3005/api/v1/blogs"); // change to your endpoint
+        const res = await fetch(`${url}/blogs`);
         const data = await res.json();
 
         if (data.status && Array.isArray(data.data)) {
