@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import { axios } from "../../api/index"
 interface IBlog {
   id: number;
   title: string;
@@ -18,8 +18,16 @@ const BlogDetail: React.FC = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await fetch(`http://localhost:3005/api/v1/blogs/${id}`);
-        const data = await res.json();
+        const res = await axios.get(`/blogs/${id}`);
+        if (res.status !== 200) {
+          return (
+            <div className="text-center">
+              <p className="text-red-500">{error}</p>
+              <p>Please try refreshing the page or come back later.</p>
+            </div>
+          );
+        }
+        const data = res.data;
 
         if (data.status && data.data) {
           setBlog(data.data);
@@ -65,7 +73,7 @@ const BlogDetail: React.FC = () => {
       >
         {new Date(blog.createdAt).toLocaleDateString()}
       </p>
-     <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+      <div dangerouslySetInnerHTML={{ __html: blog.content }} />
 
     </article>
   );
