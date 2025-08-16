@@ -1,37 +1,49 @@
 import { useEffect, useState } from "react";
-import {  axios } from "../../api/index"; // Importing Axios directly
+import { axios } from "../../api"; // Make sure this is the default export
 import { BlogShowcase } from "../../components";
 
+interface Blog {
+  id: number;
+  title: string;
+  content: string;
+  image: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
 const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null); // Type explicitly as string or null
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
         setLoading(true);
-        setError(null); // Reset error state before fetching new data
+        setError(null);
 
         const response = await axios.get("/blogs");
 
-        // Assuming the response is structured like this: { status: true, data: [...] }
-        if (response.status === 200 && Array.isArray(response.data)) {
-          //@ts-ignore
-          setBlogs(response.data); // Successfully fetched the blogsß
+        // Basic response validation
+        if (response.status === 200 && response.data.status === true) {
+          if (Array.isArray(response.data.data)) {
+            setBlogs(response.data.data);
+          } else {
+            throw new Error("Unexpected data format: 'data' is not an array.");
+          }
         } else {
-          throw new Error(response.data.message || "Unexpected API response structure");
+          throw new Error(response.data.message || "Failed to fetch blogs.");
         }
       } catch (err: any) {
-        console.error("Error fetching blogs:", err); // Logging the error
-        setError(err?.message || "Something went wrong, please try again later.");
+        console.error("Error fetching blogs:", err);
+        setError(err.message || "Something went wrong, please try again later.");
       } finally {
         setLoading(false);
       }
     };
 
     fetchBlogs();
-  }, []); // Empty dependency array to run the effect once on component mount
+  }, []);
 
   if (loading) {
     return <p className="text-center text-lg">Loading blogs...</p>;
@@ -39,9 +51,9 @@ const Blog = () => {
 
   if (error) {
     return (
-      <div className="text-center">
-        <p className="text-red-500">{error}</p>
-        <p>Please try refreshing the page or come back later.</p>
+      <div className="text-center text-red-500">
+        <p>{error}</p>
+        <p className="text-black">Please try refreshing the page or come back later.</p>
       </div>
     );
   }
