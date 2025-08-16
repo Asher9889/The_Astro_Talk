@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios"; // Importing Axios directly
+import {  axios } from "../../api/index"; // Importing Axios directly
 import { BlogShowcase } from "../../components";
 
 const Blog = () => {
