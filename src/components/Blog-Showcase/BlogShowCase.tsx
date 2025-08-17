@@ -1,4 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import { stripHtml } from "string-strip-html"; 
+
+
 
 interface IBlog {
   id: number;
@@ -13,6 +16,7 @@ interface BlogShowcaseProps {
 
 const BlogShowcase: React.FC<BlogShowcaseProps> = ({ blogs }) => {
   const navigate = useNavigate();
+  
   return (
     <section
       className="py-12 px-6 md:px-12"
@@ -36,8 +40,11 @@ const BlogShowcase: React.FC<BlogShowcaseProps> = ({ blogs }) => {
 
       {/* Grid */}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {blogs.map((blog, index) => (
-          <div
+        {blogs.map((blog, index) => {
+          const plainText = stripHtml(blog.content).result;
+
+          return (
+            <div
             key={index}
             className="rounded-xl shadow-lg overflow-hidden hover:scale-[1.02] transition-transform duration-300"
             style={{ backgroundColor: "white" }}
@@ -75,13 +82,17 @@ const BlogShowcase: React.FC<BlogShowcaseProps> = ({ blogs }) => {
                 className="text-sm"
                 style={{ color: "var(--color-text-secondary)" }}
               >
-                {blog.content.length > 100
-                  ? blog.content.substring(0, 100) + "..."
-                  : blog.content}
+                {plainText.length > 100
+                  ? plainText.substring(0, 100) + "..."
+                  : plainText}
               </p>
             </div>
           </div>
-        ))}
+          )
+        }
+          
+          
+        )}
       </div>
     </section>
   );

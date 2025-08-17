@@ -16,9 +16,10 @@ import Loading from "./Loading/Loading";
 import TalkToAstroForm from "./talk-to-astro-form/TalkToAstroForm";
 import BlogShowcase from "./Blog-Showcase/BlogShowCase";
 import BlogDetail from "./BlogDetails/BlogDetails";
+import Loader from "./Loader/Loader";
 
 
 
 export { Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, 
     ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm, 
-    KundliGenerateLoading, Loading, TalkToAstroForm, BlogShowcase, BlogDetail }
+    KundliGenerateLoading, Loading, TalkToAstroForm, BlogShowcase, BlogDetail, Loader }
