@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { stripHtml } from "string-strip-html"; 
 
-
-
 interface IBlog {
   id: number;
   image: string;

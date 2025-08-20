@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { axios } from "../../api/index"
+import Loader from "../Loader/Loader";
 interface IBlog {
   id: number;
   title: string;
@@ -44,7 +45,7 @@ const BlogDetail: React.FC = () => {
     if (id) fetchBlog();
   }, [id]);
 
-  if (loading) return <p className="text-center text-lg">Loading blog...</p>;
+  if (loading) return <Loader />;
   if (error) return <p className="text-center text-red-500">{error}</p>;
   if (!blog) return <p className="text-center">Blog not found</p>;
 
