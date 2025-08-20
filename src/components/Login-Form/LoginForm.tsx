@@ -4,10 +4,14 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import img from "../../assets/image.png"
+import { useNavigate } from "react-router-dom"
 export default function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
+
+  const navigate = useNavigate();
+
   return (
    <div className={cn("flex flex-col gap-6", className)} {...props} style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-text-primary)' }}>
   <Card className="overflow-hidden p-0">
@@ -81,7 +85,7 @@ export default function LoginForm({
           </div>
           <div className="text-center text-sm text-textSecondary">
             Don&apos;t have an account?{" "}
-            <a href="#" className="underline underline-offset-4 text-link">
+            <a onClick={()=> navigate("/sign-up")} href="#" className="underline underline-offset-4 text-link">
               Sign up
             </a>
           </div>

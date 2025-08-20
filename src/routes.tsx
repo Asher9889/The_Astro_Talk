@@ -3,7 +3,7 @@ import { Blog, Home, KundliGenerate, TalkToAstrologer } from "./pages";
 // import {CertifiedAstrologer} from "./pages";
 // import { CertifiedAstrologer } from "./pages/CertifiedAstrolog
 import { CertifiedAstrologer } from "./pages/CertifiedAstrologer/CertifiedAstrologer";
-import { BlogDetail, ConsultationForm } from "./components";
+import { BlogDetail, ConsultationForm, SignUpForm } from "./components";
 import Login from "./pages/Login/Login";
 
 const routesData = [
@@ -14,6 +14,10 @@ const routesData = [
     {
         name: "/register",
         element: <Login />
+    },
+    {
+        name: "/sign-up",
+        element: <SignUpForm />
     },
     {
         name: "/generate-kundli",

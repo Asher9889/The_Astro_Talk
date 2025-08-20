@@ -18,9 +18,13 @@ import BlogShowcase from "./Blog-Showcase/BlogShowCase";
 import BlogDetail from "./BlogDetails/BlogDetails";
 import Loader from "./Loader/Loader";
 import LoginForm from "./Login-Form/LoginForm";
+import SignUpForm from "./SignUp/SignUpForm";
 
 
 
-export { Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal, 
-    ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm, 
-    KundliGenerateLoading, Loading, TalkToAstroForm, BlogShowcase, BlogDetail, Loader, LoginForm }
+export {
+    Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal,
+    ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm,
+    KundliGenerateLoading, Loading, TalkToAstroForm, BlogShowcase, BlogDetail, Loader, LoginForm,
+    SignUpForm
+}
