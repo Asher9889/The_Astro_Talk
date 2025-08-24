@@ -19,6 +19,9 @@ import BlogDetail from "./BlogDetails/BlogDetails";
 import Loader from "./Loader/Loader";
 import LoginForm from "./Login-Form/LoginForm";
 import SignUpForm from "./SignUp/SignUpForm";
+import SignupWithPhone from "./SignUp/SignupWithPhone";
+import PhoneInput from "./phone-input/PhoneInput";
+import PasswordInput from "./password-input/PasswordInput";
 
 
 
@@ -26,5 +29,5 @@ export {
     Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal,
     ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm,
     KundliGenerateLoading, Loading, TalkToAstroForm, BlogShowcase, BlogDetail, Loader, LoginForm,
-    SignUpForm
+    SignUpForm, SignupWithPhone, PhoneInput, PasswordInput
 }

@@ -44,7 +44,7 @@ const SignUpForm = () => {
             {/* Last Name */}
             <div>
               <Label htmlFor="lastName" style={{ color: 'var(--color-text-primary)' }}>
-                User Name
+                Last Name
               </Label>
               <Input
                 id="lastName"
@@ -78,7 +78,7 @@ const SignUpForm = () => {
               <Input
                 id="phone"
                 type="tel"
-                placeholder="(123) 456-7890"
+                placeholder="Enter phone no"
                 required
                 style={{ borderColor: 'var(--color-border)' }}
                 className="mt-2"
