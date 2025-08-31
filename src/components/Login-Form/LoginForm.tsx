@@ -11,6 +11,7 @@ import { toast } from "sonner"
 import { Spinner } from "../ui"
 import { useDispatch } from "react-redux"
 import { setUser } from "@/store/slices"
+import { Link } from "react-router-dom"
 
 export default function LoginForm({
   className,
@@ -74,13 +75,13 @@ export default function LoginForm({
                 <div className="grid gap-3">
                   <div className="flex items-center">
                     <Label htmlFor="password" style={{ color: 'var(--color-text-primary)' }}>Password</Label>
-                    <a
-                      href="#"
+                    <Link
+                      to="/forget-password"
                       className="ml-auto text-sm underline-offset-2 hover:underline"
                       style={{ color: 'var(--color-link)' }}
                     >
                       Forgot your password?
-                    </a>
+                    </Link>
                   </div>
                   <Input id="password" type="password" required
                     value={userDetails.password}

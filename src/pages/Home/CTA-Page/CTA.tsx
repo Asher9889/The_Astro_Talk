@@ -8,7 +8,7 @@ const CTA = () => {
             <h1 className="text-3xl font-bold text-(--color-text-primary)">Would you like to understand yourself better using Vedic Astro?</h1>
             <div className="flex flex-row justify-center items-center gap-20">
                 <Button navigate="register" className="bg-(--color-text-secondary) hover:bg-(--color-text-primary)  px-8 font-bold" content="Yes" />
-                <Button className="bg-(--color-link)  hover:bg-(--color-button-secondary) px-8" content="No" />
+                <Button navigate="astrology-insight" className="bg-(--color-link)  hover:bg-(--color-button-secondary) px-8" content="No" />
             </div>
         </div>
     )

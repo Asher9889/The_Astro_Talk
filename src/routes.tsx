@@ -2,7 +2,7 @@
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { Blog, Dashboard, Home, KundliGenerate, TalkToAstrologer } from "./pages";
 import { CertifiedAstrologer } from "./pages/CertifiedAstrologer/CertifiedAstrologer";
-import { BlogDetail, ConsultationForm, SignUpForm } from "./components";
+import { BlogDetail, ConsultationForm, ForgetPassword, ResetPasswordForm, SignUpForm } from "./components";
 import Login from "./pages/Login/Login";
 import { useSelector } from "react-redux";
 import type { RootState } from "./store";
@@ -30,6 +30,8 @@ const routesData = [
   { path: "/astrology-insight", element: <Blog />},
   { path: "/astrology-insight/:id", element: <BlogDetail />},
   { path: "/dashboard", element: <Dashboard />, protected: true },
+  { path: "/forget-password", element: <ForgetPassword /> },
+  { path: "/reset-password", element: <ResetPasswordForm /> },
 ];
 
 function Routing() {

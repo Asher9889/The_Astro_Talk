@@ -22,6 +22,8 @@ import SignUpForm from "./SignUp/SignUpForm";
 import SignupWithPhone from "./SignUp/SignupWithPhone";
 import PhoneInput from "./phone-input/PhoneInput";
 import PasswordInput from "./password-input/PasswordInput";
+import ForgetPassword from "./Forget-Password/ForgetPassword";
+import ResetPasswordForm from "./Reset-Password-Form/ResetPasswordForm";
 
 
 
@@ -29,5 +31,5 @@ export {
     Header, Hero, SmoothCursor, SparklesText, RainbowButton, Meteors, Corousal,
     ConsultationForm, ContentWrapper, AstrologerCard, Footer, Button, UserForm,
     KundliGenerateLoading, Loading, TalkToAstroForm, BlogShowcase, BlogDetail, Loader, LoginForm,
-    SignUpForm, SignupWithPhone, PhoneInput, PasswordInput
+    SignUpForm, SignupWithPhone, PhoneInput, PasswordInput, ForgetPassword, ResetPasswordForm
 }
