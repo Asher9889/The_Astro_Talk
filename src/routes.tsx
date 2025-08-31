@@ -27,8 +27,8 @@ const routesData = [
   { path: "/certified_astro", element: <CertifiedAstrologer /> },
   { path: "/chat_with_astrologer", element: <ConsultationForm /> },
   { path: "/talk_to_astrologer", element: <TalkToAstrologer />, protected: true},
-  { path: "/astrology-insight", element: <Blog />, guest: true },
-  { path: "/astrology-insight/:id", element: <BlogDetail /> },
+  { path: "/astrology-insight", element: <Blog />},
+  { path: "/astrology-insight/:id", element: <BlogDetail />},
   { path: "/dashboard", element: <Dashboard />, protected: true },
 ];
 
