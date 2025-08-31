@@ -67,8 +67,8 @@ function Register({onSuccess}: Props) {
   }
 
   return (
-    <div className="min-h-[60vh] h-full w-full items-center px-4  text-[var(--color-text-primary)] ">
-      <Card className="mx-auto max-w-md border">
+    <div className="min-h-[60vh] w-full items-center text-[var(--color-text-primary)]">
+      <Card className="mx-auto w-full md:max-w-md border">
         <CardHeader>
           <CardTitle className="text-2xl text-[var(--color-text-primary)]">
             Register
