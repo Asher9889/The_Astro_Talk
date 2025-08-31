@@ -9,7 +9,8 @@ import { useState } from "react"
 import { axios } from "@/api"
 import { toast } from "sonner"
 import { Spinner } from "../ui"
-import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { setUser } from "@/store/slices"
 
 export default function LoginForm({
   className,
@@ -18,7 +19,7 @@ export default function LoginForm({
 
   const [userDetails, setUserDetails] = useState({ email: "", password: "" })
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
+  const dispatch = useDispatch()
 
   const handleSubmit = async (e: React.FormEvent) => {
     try {
@@ -30,7 +31,7 @@ export default function LoginForm({
         toast.error(res.data.message, {id: "auth"});
       }
       toast.success(res.data.message, {id: "auth"}); // login successful
-      navigate("/dashboard");
+      dispatch(setUser(res.data.data))
       
     } catch (error: any) {
       if (error.response) {
@@ -124,7 +125,7 @@ export default function LoginForm({
                   </Button> */}
                 </div> 
 
-                <div className="text-center text-sm text-textSecondary">
+                <div className="text-center text-sm text-(--color-text-secondary)">
                   Don&apos;t have an account?{" "}
                   {/* Signup Pop-up Form */}
                   <SignupWithPhone />

@@ -7,7 +7,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Input, Button,  Spinner } from "../ui";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -206,9 +206,9 @@ function Register({onSuccess}: Props) {
           </Form>
           <div className="mt-4 text-center text-sm text-[var(--color-text-secondary)]">
             Already have an account?{" "}
-            <Link to="/login" className="underline text-[var(--color-link)] hover:text-[var(--color-button-primary)]">
+            <button onClick={() => onSuccess?.()} className="underline text-[var(--color-link)] hover:text-[var(--color-button-primary)]">
               Login
-            </Link>
+            </button>
           </div>
         </CardContent>
       </Card>
@@ -220,7 +220,7 @@ const SignupWithPhone = () => {
   const [openDialogBox, setOpenDialogBox] = useState(false);
   return (
     <Dialog open={openDialogBox} onOpenChange={setOpenDialogBox}>
-      <DialogTrigger className="underline">Sign up</DialogTrigger>
+      <DialogTrigger className="underline text-[var(--color-button-primary))]">Sign up</DialogTrigger>
       <DialogContent>
         <Register onSuccess={() => setOpenDialogBox(false)} />
       </DialogContent>
