@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Blog, Home, KundliGenerate, TalkToAstrologer } from "./pages";
+import { Blog, Dashboard, Home, KundliGenerate, TalkToAstrologer } from "./pages";
 // import {CertifiedAstrologer} from "./pages";
 // import { CertifiedAstrologer } from "./pages/CertifiedAstrolog
 import { CertifiedAstrologer } from "./pages/CertifiedAstrologer/CertifiedAstrologer";
@@ -42,7 +42,11 @@ const routesData = [
     {
         name: "/astrology-insight/:id",
         element: <BlogDetail />
-    }
+    },
+    {
+        name: "/dashboard",
+        element: <Dashboard />
+    },
 ]
 
 function Routing() {

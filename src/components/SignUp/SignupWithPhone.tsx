@@ -52,13 +52,14 @@ function Register({onSuccess}: Props) {
       if(res.status !== 200){
         return toast.error(res.data.message || "Failed to create user");
       }
-      toast(res.data.message);
+      toast.success(res.data.message, {id: "auth"});
       onSuccess?.(); // ✅ close dialog
       navigate("/register")
     } catch (e:any) {
       console.error("Form submission error", e);
       toast.error(e.response.data.message || e.response.statusText, {
-       position: "top-center"
+       position: "top-center",
+       id: "auth"
       });
     }finally{
       setLoading(false);
