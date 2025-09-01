@@ -85,7 +85,7 @@ function ForgetPassword() {
 
         <div className="flex justify-center">
           <Link
-            to="/login"
+            to="/register"
             className="text-sm font-medium text-(--color-text-primary) hover:text-(--color-text-secondary)"
           >
             Back to login
